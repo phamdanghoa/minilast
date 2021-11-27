@@ -8,6 +8,7 @@ module.exports = function(app){
     app.post("/dangky",function(req,res){
 if(!req.body.Email || !req.body.HoTen || !req.body.SoDT){
 res.json({ketqua:0, maloi:" Thieu tham so kia ban oi"});
+
 }else{
     var hocvienMoi =new Hocvien({
         Email:req.body.Email,

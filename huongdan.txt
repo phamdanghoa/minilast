@@ -1,0 +1,4 @@
+-open with visual studio code 
+-click-> terminal -> new terminal
+-run : node server
+-then go to :  http://localhost:3000/

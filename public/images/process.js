@@ -88,6 +88,7 @@ $(document).ready(function(){
         connectMM().then((data)=>{
             currentAccount = data[0];
             console.log(currentAccount);
+            alert(" DA DN META MASK");
         }).catch((err)=>{
             console.log(err);
         });
@@ -100,17 +101,18 @@ $(document).ready(function(){
 
 
        }else{
+           
         $.post("./dangky",{
             Email:$("#txtEmail").val(),
             HoTen:$("#txtHoTen").val(),
             SoDT:$("#txtSoDT").val()
         },
         function(data){
-            if(data.ketqua==1){
+            if(data.ketqua==1 ){
                 contract_MM.methods.DangKy(data.maloi._id).send({
                     from: currentAccount
                 });
-
+                alert("ban da dang ky game thanh cong");
             }
 
             });

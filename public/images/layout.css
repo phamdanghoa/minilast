@@ -1,0 +1,30 @@
+#danhsach{background-color:aqua;padding: 10px;margin-bottom: 10px;position: absolute;  height:30px;width: 750px;top: 500px;right: 10px;}
+#tbDS{width: 90%;}
+#dong1{text-align:center;padding: 4px;border-bottom: solid 1px cornflowerblue; right: 250px;  height:30px;width: 65px;top: 5500px;}
+#txtHoTen{text-align:center;padding: 4px;border-bottom: solid 1px cornflowerblue;border-radius: 4px; position: absolute;right: 100px;top: 400px}
+#txtEmail{text-align:center;padding: 4px;border-bottom: solid 1px cornflowerblue;border-radius: 4px;position: absolute;right: 300px;top: 400px}
+#txtSoDT{text-align:center;padding: 4px;border-bottom: solid 1px cornflowerblue;border-radius: 4px;position: absolute;right: 500px;top: 400px}
+#btnDangKy{text-align:center;padding: 4px;border-bottom: solid 1px cornflowerblue;border-radius: 4px;position: absolute;right: 350px;  height:30px;width: 65px;top: 450px;}
+#connectMM{text-align:center;padding: 10px;border-radius: 40px; background-color:rgb(21, 209, 106)rgb(1, 8, 6); position: absolute;right: 10px;top: 10px}
+#Huongdan {
+    color: rgb(10, 25, 26);
+    text-align: left;
+    font-size: small;
+    padding: 10px;
+    border-radius: 40px;
+    position: absolute;
+    right: 250px;
+}
+.csw-btn-button {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 35px;
+    color: #ffffff !important;
+    border-radius: 20px;
+    background: #0380a7;
+    border: 1px solid #0276a3;
+    transition: 0.4s;
+  }
+  .csw-btn-button:hover {
+    background: #292929;
+  }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="https://ethgame.herokuapp.com/"/>
+    <base href="http://localhost:3000/"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +9,42 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./scripts/web3.js"></script>
     <script src= "./images/process.js"></script>
-    <style>
-        #frmDangKy ,#danhsach{background-color:aqua;padding: 10px;margin-bottom: 10px;}
-        #tbDS{width: 90%;}
-        #dong1{text-align: center;padding: 4px;border-bottom: solid 1px cornflowerblue;}
-    </style>
+    <link rel="stylesheet" type="text/css" href="./images/layout.css">
+    
+    
 </head>
 <body>
-    <h2> Minigame <h2>
-        <button id="connectMM">Connect Meta Mask</button>
+    <div id="Huongdan">
+        <h1>Hướng dẫn tham gia:</h1>
+        <p>- Kích nút "Login Meta Mask" để kết nối vị trí của bạn. chú ý sử dụng mạng
+            <td>
+                <div style="color:Tomato;"> Rinkeby Test Network</div>
+            </td>
+
+        </p>
+        <p>- Nhập Thông tin họ tên, emai, điện thoại và click nút đăng ký.</p>
+        <p>- Chờ vài giây để đảm bảo thông tin của bạn được lưu vào Blockchain thành công.</p>
+        <h1>Thông Tin khác:</h1>
+        <p>- Thông tin họ tên, email, điện thoại của bạn được bảo mật, cam kết không công khai cho bên thứ ba.</p>
+        <p>- Danh sách đăng ký được lưu trên Blockchain Enthereum.</p>
+
+    </div>
+    
+     
+   
+    <button id="connectMM" >Login Meta Mask</button>
+       
+
+        
         <div id="frmDangKy">
             <input id="txtHoTen" type ="text" placeholder="Họ Tên"/>
-            <input id="txtEmail" type ="text" placeholder="Email"/>
-            <input id="txtSoDT" type ="text" placeholder="Điện thoại"/>
+            <input id="txtEmail" type ="email" placeholder="Email"/>
+            <input id="txtSoDT" type ="text"  placeholder="Điện thoại"/>
             <button id="btnDangKy">Đăng ký </button>
 
         </div>
-        <div id="danhsach">
+       
+     <div id="danhsach">
             <table id="tbDS">
                  <tr id="dong1">
                     <td>Address</td>
@@ -33,5 +52,8 @@
                  </tr>
             </table>
         </div>
+        <button type="button" onclick="location.href='http://localhost:3000/list';" class="csw-btn-button" >Xem danh sách tại đây</button>
+
+ 
 </body>
 </html>
